@@ -1,10 +1,12 @@
 package com.chudnikau.transformedstr;
 
-import com.chudnikau.leadingzeros.Solution;
-
 public class Main {
     public static void main(String[] args) {
-        com.chudnikau.leadingzeros.Solution solution = new Solution();
-        System.out.println(solution.solution("Main"));
+        Solution solution = new Solution();
+        assertEquals(solution.solution("CBACD").equals("C"));
+    }
+
+    static void assertEquals(Boolean b) {
+        if (!b) throw new RuntimeException();
     }
 }
